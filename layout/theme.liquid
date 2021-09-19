@@ -129,7 +129,8 @@
     <link rel="stylesheet" href="{{ 'component-predictive-search.css' | asset_url }}" media="print"
       onload="this.media='all'">
     {%- endif -%}
-
+    <link rel="stylesheet" href="{{ 'global.css' | asset_url }}" type="text/css" media="print" onload="this.media='all'
+      ;onLoadStylesheet()">
     <script>
       document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
     </script>
